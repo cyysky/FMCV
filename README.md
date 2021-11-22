@@ -1,5 +1,7 @@
 # FMCV
-Fortune Machine Computer Vision
+Fortune Machine Computer Vision  
+
+![alt text](https://github.com/cyysky/FMCV/raw/main/FMCV/UI/Resource/fmcv-splash-960.png)  
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,33 +16,33 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Some icons by Yusuke Kamiyamane. Licensed under a Creative Commons Attribution 3.0 License.
+Some icons by Yusuke Kamiyamane. Licensed under a Creative Commons Attribution 3.0 License.  
 
-FMCV
+FMCV  
 
-6.0.0-Dev-20211007-0123
+6.0.0-Dev-20211007-0123  
 
-Building QT Interfaces
--DisplayList
--ROISelector
-Building Program
-Building Tensorflow
--AI
+Building QT Interfaces  
+-DisplayList  
+-ROISelector  
+Building Program  
+Building Tensorflow  
+-AI  
 
-6.0.0-Dev-20211006-1208
-Building QT Interfaces
--DisplayList
--ImageViewer
--MdiArea Subwindow Update
-Updating Setting
-Building Tensorflow
--AI
+6.0.0-Dev-20211006-1208  
+Building QT Interfaces  
+-DisplayList  
+-ImageViewer  
+-MdiArea Subwindow Update  
+Updating Setting  
+Building Tensorflow  
+-AI  
 
-6.0.0-Dev-202110041745
-Building QT Interfaces
--ImageViewer
--CodeEditor
-Building Program
-Building Tensorflow
+6.0.0-Dev-202110041745  
+Building QT Interfaces  
+-ImageViewer  
+-CodeEditor  
+Building Program  
+Building Tensorflow  
 
-6.0.0-Dev-202110041638
+6.0.0-Dev-202110041638  

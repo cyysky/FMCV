@@ -1,20 +1,3 @@
-# #==========================================================================
-# import hashlib
-# from FMCV.peace import Peace,license
-# lic = license()['Vision']
-# if (hashlib.sha3_256((lic+lic).encode('utf-8')).hexdigest()!=Peace(lic)):
-    # # https://stackoverflow.com/questions/9555133/e-printstacktrace-equivalent-in-python
-    # #traceback.print_exc()
-    # # https://stackoverflow.com/questions/73663/terminating-a-python-script
-    # import os
-    # import sys
-    # os._exit(0)
-    # sys.exit(0)
-    # raise SystemExit  
-    # 1/0      
-    # pass
-# #==========================================================================
-
 import ctypes
 
 from ctypes import wintypes

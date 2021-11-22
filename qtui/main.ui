@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1083</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>FMCV AI CNN Deep Learning System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>901</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QMdiArea" name="mdiArea">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,0">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QPushButton" name="addButton">
+            <property name="text">
+             <string>Add Program</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clear_msgButton">
+            <property name="text">
+             <string>Clear Message</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="plainTextEdit">
+          <property name="plainText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Current Program : </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="prog_nameComboBox"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="refresh_stepButton">
+            <property name="text">
+             <string>Load Program</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1083</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbouts">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionFMCV"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionTile_Windows"/>
+    <addaction name="actionView_Images"/>
+   </widget>
+   <widget class="QMenu" name="menuProgram">
+    <property name="title">
+     <string>Program</string>
+    </property>
+    <addaction name="actionRun_Single_Step"/>
+    <addaction name="actionRun_All_Step"/>
+    <addaction name="actionEdit_Step"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Program_Folder"/>
+    <addaction name="actionReload_Program"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuProgram"/>
+   <addaction name="menuAbouts"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFMCV">
+   <property name="text">
+    <string>FMCV</string>
+   </property>
+  </action>
+  <action name="actionTile_Windows">
+   <property name="text">
+    <string>Tile Windows</string>
+   </property>
+  </action>
+  <action name="actionRun_Single_Step">
+   <property name="text">
+    <string>Run Single Step</string>
+   </property>
+  </action>
+  <action name="actionRun_All_Step">
+   <property name="text">
+    <string>Run All Step</string>
+   </property>
+  </action>
+  <action name="actionSave_Step">
+   <property name="text">
+    <string>Save Step</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionReload_Program">
+   <property name="text">
+    <string>Reload Program</string>
+   </property>
+  </action>
+  <action name="actionEdit_Step">
+   <property name="text">
+    <string>Edit Step</string>
+   </property>
+  </action>
+  <action name="actionView_Images">
+   <property name="text">
+    <string>View Images</string>
+   </property>
+  </action>
+  <action name="actionOpen_Program_Folder">
+   <property name="text">
+    <string>Open Program Folder</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

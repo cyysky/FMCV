@@ -1,0 +1,1 @@
+pip install tensorflow tensorflow-hub pandas scikit-image pyserial pyperclip3

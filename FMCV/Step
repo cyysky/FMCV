@@ -1,0 +1,24 @@
+from FMCV import RunStep
+
+import cv2
+
+def run(frames):#frames[] single frame get from multiple camera
+    #for count,frm in enumerate(frames): 
+    step_obj = RunStep.steper.get(RunStep.step_count)
+    result = step_obj[0](frames[0],step_obj[1],step_obj[2]) #step caller
+    RunStep.results.append(result)
+    RunStep.step_count += 1
+    
+#Add Steps Here
+def func_1(frm,roi,template):
+    edges = cv2.Canny(frm,100,200)
+    contours, hierarchy = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    cv2.drawContours(frm, contours, -1, (0, 255, 0), 3)
+    RunStep.displays['{}_{}'.format(RunStep.step_count,'edges')] = frm
+    return True
+    
+RunStep.steper={
+    1:[func_1,(0,0,1,1),"template.jpg"], #function,(x1,y1,x2,y2),"template image file"
+    2:[func_1,(0,0,1,1),"template.jpg"],
+    3:[func_1,(0,0,1,1),"template.jpg"]
+}

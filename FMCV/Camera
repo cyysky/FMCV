@@ -1,0 +1,19 @@
+from PROG.CameraHandle import *
+
+#cams[0].set(cv2.CAP_PROP_AUTO_EXPOSURE,0)
+#cams[0].set(cv2.CAP_PROP_EXPOSURE,5)
+#cams[0].set(cv2.CAP_PROP_AUTOFOCUS,0)
+#cams[0].set(cv2.CAP_PROP_FOCUS,100)
+#cams[0].set(cv2.CAP_PROP_FRAME_WIDTH,640)
+#cams[0].set(cv2.CAP_PROP_FRAME_HEIGHT,480)    
+
+#Default function for vision system
+def get_images():
+    global cams
+    frames = []
+    for cam in cams:
+        ret, frm = cam.read()
+        #frm = cv2.flip(frm, 0)
+        frames.append(frm)        
+        if not ret: print("Cam Error")        
+    return frames

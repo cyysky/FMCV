@@ -10,6 +10,10 @@ def get_image(filename,*args, **kwargs):
     print(join(prog_dir,"images",filename))
     return cv2.imread(join(prog_dir,"images",filename),*args, **kwargs)
 
+def get_path(filename):
+    print(join(prog_dir,filename))
+    return join(prog_dir,filename)
+
 def msg(text):
     if Message is not None:
         Message.appendPlainText(str(text))

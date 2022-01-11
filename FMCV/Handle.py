@@ -43,6 +43,7 @@ display = None
 from FMCV.UI.FMCV import FMCV_SPLASH_LOGO
 
 def run():    
+    global window
     app = QtWidgets.QApplication(sys.argv)  
     image_QImage = QtGui.QImage()
     image_QByteArr = QtCore.QByteArray.fromBase64(FMCV_SPLASH_LOGO)
@@ -56,6 +57,7 @@ def run():
     Program.Handle = self
     RunStep.Message = window.plainTextEdit
     RunStep.prog_dir = Setting.prog_dir()
+    RunStep.Handle = self
     Program.refresh() # Start FMCV
     
     window.show()
@@ -237,7 +239,7 @@ def refresh_step():
     same = Setting.compare_last_prog_name(selected_prog_name)
     #reset run RunStep import by Program.Step
     RunStep.reset()
-
+    RunStep.Handle = self
     #Refresh Program.Step and Program.Camera with new Setting
     Program.change_prog(selected_prog_name)
     RunStep.prog_dir = Setting.prog_dir()
